@@ -226,3 +226,4 @@ pip-log.txt
 *.blg
 *.out
 *.synctex
+*.tps
