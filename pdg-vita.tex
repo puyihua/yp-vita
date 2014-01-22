@@ -6,15 +6,15 @@
 \def\myweb{pdgessler}
 \def\myphone{414-241-1627}
 \def\mykeywords{
-	paul gessler, 
-	resume, 
-	curriculum, 
-	vita, 
-	curriculum vita, 
-	cv, 
-	paul, 
-	gessler, 
-	pdg
+  paul gessler, 
+  resume, 
+  curriculum, 
+  vita, 
+  curriculum vita, 
+  cv, 
+  paul, 
+  gessler, 
+  pdg
 }
 
 \setlength\parindent{0pt}
@@ -35,11 +35,11 @@
 \usepackage[margin=1in,right=1in,left=2in]{geometry}
 \usepackage[strict]{changepage}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage[ 
-	ocgcolorlinks,
-	urlcolor={[rgb]{0,0,0.54}},
-	unicode,
-	plainpages=false,
+\usepackage[
+  ocgcolorlinks,
+  urlcolor={[rgb]{0,0,0.54}},
+  unicode,
+  plainpages=false,
   pdfpagelabels,
   pdftitle={\mytitle},
   pdfauthor={\myauthor},
@@ -49,56 +49,53 @@
 % fix ocgcolor link breaking; thanks due to Benjamin Lerner (http://goo.gl/VZKR7M)
 \makeatletter
 \AtBeginDocument{%
-    \newlength{\temp@x}%
-    \newlength{\temp@y}%
-    \newlength{\temp@w}%
-    \newlength{\temp@h}%
-    \def\my@coords#1#2#3#4{%
-      \setlength{\temp@x}{#1}%
-      \setlength{\temp@y}{#2}%
-      \setlength{\temp@w}{#3}%
-      \setlength{\temp@h}{#4}%
-      \adjustlengths{}%
-      \my@pdfliteral{\strip@pt\temp@x\space\strip@pt\temp@y\space\strip@pt\temp@w\space\strip@pt\temp@h\space re}}%
-    \ifpdf
-      \typeout{In PDF mode}%
-      \def\my@pdfliteral#1{\pdfliteral page{#1}}% I don't know why % this command...
-      \def\adjustlengths{}%
-    \fi
-    \ifxetex
-      \def\my@pdfliteral #1{\special{pdf: literal direct #1}}% isn't equivalent to this one
-      \def\adjustlengths{\setlength{\temp@h}{-\temp@h}\addtolength{\temp@y}{1in}\addtolength{\temp@x}{-1in}}%
-    \fi%
-    \def\Hy@colorlink#1{%
-      \begingroup
-        \ifHy@ocgcolorlinks
-          \def\Hy@ocgcolor{#1}%
-          \my@pdfliteral{q}%
-          \my@pdfliteral{7 Tr}% Set text mode to clipping-only
-        \else
-          \HyColor@UseColor#1%
-        \fi
-    }%
-    \def\Hy@endcolorlink{%
-      \ifHy@ocgcolorlinks%
-        \my@pdfliteral{/OC/OCPrint BDC}%
-        \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
-        \my@pdfliteral{F}% Fill clipping path (the url's text) with
-                           % current color
-        %
-        \my@pdfliteral{EMC/OC/OCView BDC}%
-        \begingroup%
-          \expandafter\HyColor@UseColor\Hy@ocgcolor%
-          \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
-          \my@pdfliteral{F}% Fill clipping path (the url's text)
-                             % with \Hy@ocgcolor
-        \endgroup%
-        \my@pdfliteral{EMC}%
-        \my@pdfliteral{0 Tr}% Reset text to normal mode
-        \my@pdfliteral{Q}%
+  \newlength{\temp@x}%
+  \newlength{\temp@y}%
+  \newlength{\temp@w}%
+  \newlength{\temp@h}%
+  \def\my@coords#1#2#3#4{%
+    \setlength{\temp@x}{#1}%
+    \setlength{\temp@y}{#2}%
+    \setlength{\temp@w}{#3}%
+    \setlength{\temp@h}{#4}%
+    \adjustlengths{}%
+    \my@pdfliteral{\strip@pt\temp@x\space\strip@pt\temp@y\space\strip@pt\temp@w\space\strip@pt\temp@h\space re}}%
+  \ifpdf
+    \typeout{In PDF mode}%
+    \def\my@pdfliteral#1{\pdfliteral page{#1}}% I don't know why % this command...
+    \def\adjustlengths{}%
+  \fi
+  \ifxetex
+    \def\my@pdfliteral #1{\special{pdf: literal direct #1}}% isn't equivalent to this one
+    \def\adjustlengths{\setlength{\temp@h}{-\temp@h}\addtolength{\temp@y}{1in}\addtolength{\temp@x}{-1in}}%
+  \fi%
+  \def\Hy@colorlink#1{%
+    \begingroup
+      \ifHy@ocgcolorlinks
+        \def\Hy@ocgcolor{#1}%
+        \my@pdfliteral{q}%
+        \my@pdfliteral{7 Tr}% Set text mode to clipping-only
+      \else
+        \HyColor@UseColor#1%
       \fi
-      \endgroup
-    }%
+  }%
+  \def\Hy@endcolorlink{%
+    \ifHy@ocgcolorlinks%
+      \my@pdfliteral{/OC/OCPrint BDC}%
+      \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
+      \my@pdfliteral{F}% Fill clipping path (the url's text) with current color
+      \my@pdfliteral{EMC/OC/OCView BDC}%
+      \begingroup%
+        \expandafter\HyColor@UseColor\Hy@ocgcolor%
+        \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
+        \my@pdfliteral{F}% Fill clipping path (the url's text) with \Hy@ocgcolor
+      \endgroup%
+      \my@pdfliteral{EMC}%
+      \my@pdfliteral{0 Tr}% Reset text to normal mode
+      \my@pdfliteral{Q}%
+    \fi
+    \endgroup
+  }%
 }
 \makeatother
 % end fixes
@@ -116,14 +113,14 @@
 \renewcommand{\labelitemi}{-} 
 
 \setmainfont[
-	Ligatures={TeX,Common},
-	Numbers=OldStyle,
-	BoldFont={AGaramondPro-Semibold},
+  Ligatures={TeX,Common},
+  Numbers=OldStyle,
+  BoldFont={AGaramondPro-Semibold},
 ]{Adobe Garamond Pro}
 \setsansfont[
-	Ligatures={TeX,Common},
-	Letters=SmallCaps,
-	Color=660000,
+  Ligatures={TeX,Common},
+  Letters=SmallCaps,
+  Color=660000,
 ]{Adobe Garamond Pro}
 \setmonofont{FontAwesome}
 
@@ -134,7 +131,7 @@
 {\Huge
   {\textsc{%
     {\addfontfeature{Style=TitlingCaps}P}\kern-2ptaul 
-		{\addfontfeature{Style=TitlingCaps}D}.~%
+    {\addfontfeature{Style=TitlingCaps}D}.~%
     {\addfontfeature{Style=TitlingCaps}G}essler}
   }
 }
@@ -150,7 +147,7 @@
   \begin{minipage}[b]{1.6in}
     \flushright \footnotesize 
     \href{tel:\myphone}{\myphone} \\ %\texttt{}~
-		\href{mailto:\myemail}{\myemail} \\
+    \href{mailto:\myemail}{\myemail} \\
     \href{https://www.github.com/\myweb}{\texttt{}}~\href{https://www.linkedin.com/in/\myweb}{\texttt{}~\myweb}
   \end{minipage}
 }\par
