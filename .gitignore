@@ -226,4 +226,6 @@ pip-log.txt
 *.blg
 *.out
 *.synctex
+*.synctex(busy)
 *.tps
+*.otf
