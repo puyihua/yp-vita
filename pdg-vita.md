@@ -19,7 +19,7 @@ Education
 *Master of Science, [Mechanical Engineering](http://www.marquette.edu/engineering/mechanical/)*,
 2012--2014
 
-* Cumulative GPA: 3.60/4.00; [Energy Systems Specialization](http://www.marquette.edu/engineering/mechanical/grad_study.shtml)
+* Cumulative GPA: 3.50/4.00; [Energy Systems Specialization](http://www.marquette.edu/engineering/mechanical/grad_study.shtml)
 * Thesis: One-Dimensional Model of a Refrigeration Cycle Compressor Test Block
 * Advisor: Dr. Margaret M. Mathison
 
@@ -91,7 +91,7 @@ Professional Experience
 * Planned and led nightly automated regression testing of 210 safety shutdown events
 * Improved automated testing speed in Excel/MATLAB/Simulink simulation by 15%
 * Created and distributed release notes documenting new features and known issues
-* Extended numerical chiller models to include two additional vessel configurations
+* Improved chiller model execution speed by implementing native thermodynamic property lookup functions
 
 Leadership Experience
 ---------------------
@@ -146,8 +146,8 @@ Presentation delivered to the MSOE Society of Automotive Engineers.
 
 Professional Affiliations
 -------------------------
-* Member ASHRAE, 2012--2014
-* Member SAE, 2008--2013
+* Member ASHRAE (formerly American Society of Heating, Refrigeration, and Air-Conditioning Engineers), 2012--2014
+* Member SAE (formerly Society of Automotive Engineers), 2008--2013
 
 Activities and Interests
 ------------------------
