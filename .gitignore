@@ -229,3 +229,8 @@ pip-log.txt
 *.synctex(busy)
 *.tps
 *.otf
+pdg-vita.txt
+awk
+gawk.exe.stackdump
+gitHeadInfo.gin
+gitTreeInfo.gtr
