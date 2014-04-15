@@ -19,7 +19,7 @@ Education
 *Master of Science, [Mechanical Engineering](http://www.marquette.edu/engineering/mechanical/)*,
 2012--2014
 
-* Cumulative GPA: 3.50/4.00; [Energy Systems Specialization](http://www.marquette.edu/engineering/mechanical/grad_study.shtml)
+* Cumulative GPA: 3.60/4.00; [Energy Systems Specialization](http://www.marquette.edu/engineering/mechanical/grad_study.shtml)
 * Thesis: One-Dimensional Model of a Refrigeration Cycle Compressor Test Block
 * Advisor: Dr. Margaret M. Mathison
 
@@ -50,10 +50,10 @@ Software Proficiencies
 * HTML/CSS
 * LaTeX
 * Vim
-* Git SCM
+* Git SCM/VCS
 * Arch Linux
 * Mac OS X
-* Windows XP/7/8
+* Windows 7/8
 
 *Basic knowledge*  
 
@@ -67,6 +67,7 @@ Software Proficiencies
 
 Honors and Awards
 -----------------
+* First Place, Department Research Poster Competition, Marquette University, Milwaukee, WI (2014)
 * Outstanding Student Chapter Award, SAE International, Detroit, MI (2011, 2012)
 * Outstanding Collegiate Chapter, SAE Milwaukee Section, Milwaukee, WI (2011)
 * First Place, Design Report Competition, SAE Supermileage, Marshall, MI (2011)
@@ -128,8 +129,8 @@ Research Experience
 
 Publications
 ------------
-*Conference paper---in preparation*  
-**Gessler, P.D.,** Mathison, M.M. (forthcoming). *Modeling of a Hot Gas Bypass Test Block for Centrifugal Compressors.* 
+*Conference paper---in review*  
+**Gessler, P.D.,** Mathison, M.M., Bowman, A.J. (2014). *Modeling of a Hot Gas Bypass Test Block for Centrifugal Compressors.* 
 To be presented at the *International Compressor Engineering Conference at Purdue University 2014*, West Lafayette, IN.
 
 *Book*  
