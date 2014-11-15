@@ -234,3 +234,6 @@ awk
 gawk.exe.stackdump
 gitHeadInfo.gin
 gitTreeInfo.gtr
+git-forest.pl
+gitgraph.txt
+sample.txt
