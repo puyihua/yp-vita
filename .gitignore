@@ -220,7 +220,7 @@ pip-log.txt
 ###########
 # TeX
 ###########
-*.pdf
+# *.pdf
 *.log
 *.swp
 *.tcp
