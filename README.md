@@ -1,2 +1,2 @@
 # yp-vita
-**yp-vita** is a Latex template for a CV(Curriculum Vitae) or Résumé created based on [pdg-vita](https://github.com/pdgessler/pdg-vita) and [kjh-vita](https://github.com/kjhealy/kjh-vita). My own job-seeking curriculum vitae is using this template.
+**yp-vita** is the Latex template for my Résumé, which is created based on [pdg-vita](https://github.com/pdgessler/pdg-vita) and [kjh-vita](https://github.com/kjhealy/kjh-vita). The LaTex coding style follows [awesome-cv](https://github.com/posquit0/Awesome-CV)

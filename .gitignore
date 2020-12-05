@@ -1,5 +1,7 @@
-### vscode latex tmp file
+### latex tmp file
 *.gz
+*.fls
+*.fdb_latexmk
 
 #################
 ## Eclipse
