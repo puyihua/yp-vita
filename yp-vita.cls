@@ -45,7 +45,7 @@
 \RequirePackage{parskip}
 % Needed to manage fonts
 \RequirePackage[quiet]{fontspec}
-% \RequirePackage{fontawesome}
+\RequirePackage{fontawesome}
 % \RequirePackage[default,opentype]{sourcesanspro}
 
 
@@ -60,7 +60,7 @@
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
-\newfontfamily\FA[Path=\@fontdir]{FontAwesome}
+% \newfontfamily\FA[Path=\@fontdir]{FontAwesome}
 % Set font for section name
 \newfontfamily\sectionfont[
     Path=\@fontdir,
@@ -84,9 +84,13 @@
 %-------------------------------------------------------------------------------
 \geometry{top=0.6in, bottom=0.6in, right=0.8in, left=0.8in}
 
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
+
 \newcommand{\cvHeaderNameIndent}{0mm}
 \newcommand{\cvSectionNameIndent}{1mm}
-\newcommand{\cvSectionNameSkipSpace}{-1.2mm}
+\newcommand{\cvSectionNameBeforeSpace}{1.5mm}
+\newcommand{\cvSectionNameAfterSpace}{1mm}
 \newcommand{\cvDescriptionIndent}{3mm}
 
 %% Header & Footer
@@ -100,6 +104,20 @@
 \pagestyle{fancy}
 
 %-------------------------------------------------------------------------------
+%                Commands for personal information
+%-------------------------------------------------------------------------------
+\newcommand*{\name}[2]{\def\@firstname{#1}\def\@lastname{#2}\def\@name{#1 #2}}
+\newcommand*{\email}[1]{\def\@email{#1}}
+\newcommand*{\mobile}[1]{\def\@mobile{#1}}
+\newcommand*{\homepage}[1]{\def\@homepage{#1}}
+\newcommand*{\github}[1]{\def\@github{#1}}
+\newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
+
+\newcommand{\myemail}{\href{mailto:\@email}{\faEnvelopeO~\@email}}
+\newcommand{\mymobile}{\faPhone~\@mobile}
+\newcommand{\mygithub}{\href{https://\@github}{\faGithub~\@github}}
+\newcommand{\mylinkedin}{\href{https://\@linkedin}{\faLinkedin~\@linkedin}}
+%-------------------------------------------------------------------------------
 %                Configuration for styles
 %-------------------------------------------------------------------------------
 
@@ -110,20 +128,33 @@
 
 
 
-\newcommand{\makename}[1]{
+\newcommand{\makename}[1][\@name]{%
     \hspace{\cvHeaderNameIndent}{\Huge\sectionfont\scshape #1}
 }
 
+\newcommand{\makecontact}[4]{%
+{
+    \hfill
+    \begin{minipage}[b]{4.5in}
+      \flushright \footnotesize
+      #1~~~#2
+      \vskip .5mm%
+      #3~~~#4
+    \end{minipage}
+  }
+}
+
 \newcommand{\msection}[1]{%
+    \vspace{\cvSectionNameBeforeSpace}
     \hspace{\cvSectionNameIndent}{
         {\Large\sectionfont\scshape\color{darkRed} #1}
         \hrulefill
     }
-    \vspace{\cvSectionNameSkipSpace}
+    \vspace{\cvSectionNameAfterSpace}
 }
 
 \newenvironment{cvitems}{%
-  \vspace{-7.5mm}
+%   \vspace{-7.5mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2em, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -131,7 +162,7 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-1.5mm}
+%   \vspace{-1.5mm}
 }
 
 \newcommand{\mentry}[4]{%
@@ -139,8 +170,9 @@
 
         \entrytitlestyle{#1}\\
         \entrypositionstyle{#2}
-        \ifthenelse{\isempty{#3}}{}{\entrydatestyle{#3}}\\
+        \ifthenelse{\isempty{#3}}{}{\entrydatestyle{#3}}
         \entrydescriptionstyle{#4}
 
     \setlength{\leftskip}{0pt}
 }
+
