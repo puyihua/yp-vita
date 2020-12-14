@@ -80,19 +80,10 @@
 
 
 %-------------------------------------------------------------------------------
-%                Commands for indent & spacing
+%                Configuration for layout
 %-------------------------------------------------------------------------------
+
 \geometry{top=0.6in, bottom=0.6in, right=0.8in, left=0.8in}
-
-\setlength{\parindent}{0em}
-\setlength{\parskip}{0em}
-
-\newcommand{\cvHeaderNameIndent}{0mm}
-\newcommand{\cvSectionNameIndent}{1mm}
-\newcommand{\cvSectionNameBeforeSpace}{1.5mm}
-\newcommand{\cvSectionNameAfterSpace}{1mm}
-\newcommand{\cvDescriptionIndent}{3mm}
-
 %% Header & Footer
 % Set offset to each header and footer
 \fancyhfoffset{0em}
@@ -103,9 +94,25 @@
 % Enable if you want to make header or footer using fancyhdr
 \pagestyle{fancy}
 
+
+%-------------------------------------------------------------------------------
+%                Commands for indent & spacing
+%-------------------------------------------------------------------------------
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
+
+\newcommand{\cvHeaderNameIndent}{0mm}
+\newcommand{\cvSectionNameIndent}{1mm}
+\newcommand{\cvSectionNameBeforeSpace}{2.5mm}
+\newcommand{\cvSectionNameAfterSpace}{1mm}
+\newcommand{\cvDescriptionIndent}{3mm}
+
+
 %-------------------------------------------------------------------------------
 %                Commands for personal information
 %-------------------------------------------------------------------------------
+
 \newcommand*{\name}[2]{\def\@firstname{#1}\def\@lastname{#2}\def\@name{#1 #2}}
 \newcommand*{\email}[1]{\def\@email{#1}}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
@@ -117,16 +124,22 @@
 \newcommand{\mymobile}{\faPhone~\@mobile}
 \newcommand{\mygithub}{\href{https://\@github}{\faGithub~\@github}}
 \newcommand{\mylinkedin}{\href{https://\@linkedin}{\faLinkedin~\@linkedin}}
+
+
 %-------------------------------------------------------------------------------
-%                Configuration for styles
+%                Configuration for styles & formatting
 %-------------------------------------------------------------------------------
 
 \newcommand*{\entrytitlestyle}[1]{{\bfseries #1}}
 \newcommand*{\entrypositionstyle}[1]{{\slshape #1}}
 \newcommand*{\entrydatestyle}[1]{\hfill #1}
-\newcommand*{\entrydescriptionstyle}[1]{{#1}}
+\newcommand*{\entrydescriptionstyle}[1]{{\small#1}}
+\newcommand*{\skillentrystyle}[1]{{\small#1}}
 
 
+%-------------------------------------------------------------------------------
+%                Configuration for components
+%-------------------------------------------------------------------------------
 
 \newcommand{\makename}[1][\@name]{%
     \hspace{\cvHeaderNameIndent}{\Huge\sectionfont\scshape #1}
@@ -176,3 +189,6 @@
     \setlength{\leftskip}{0pt}
 }
 
+\newcommand{\skillentry}[2]{%
+  \hspace{\cvDescriptionIndent}\skillentrystyle{\textbf{#1}:~#2}
+}
