@@ -10,66 +10,118 @@
 \begin{document}
     \makename
     \makecontact{\myemail}{\mymobile}{\mygithub}{\mylinkedin}
-    \smallskip
+    \medskip
     \msection{Education}
 
     \mentry
-        {East China University of Science and Tech}
-        {B.Eng. in Slacking Engineering}
-        {July 2019}
+        {Carnegie Mellon University}
+        {Master of Science in Electrical and Computer Engineering (ECE)}
+        {May 2022}
+        {
+            \begin{cvitems}
+                \item {Coursework: Foundations of Computer Systems, Machine Learning in Production}
+            \end{cvitems}
+        }
+    \smallskip
+
+    \mentry
+        {University of Illinois at Chicago (UIC)}
+        {One-year Exchange Program at ECE Department}
+        {May 2019}
         {
             \begin{cvitems} % Description(s) bullet points
-              \item {Spent 35 nights in the school library; fell into the lake for 2 times and mistakenly picked up swimming}
-              \item {Got the title of slackest student for 4 consecutive years}
-              \item {Coursework: Introduction to Not-doing-anything, Principle of NSFW Content}
+              \item {GPA: 4.00 / 4.00}
+              \item {Coursework: Operating System Design \& Implementation, Computer Organization, Software Design, Programming Language Design, Pattern Recognition}
             \end{cvitems}
           }
     
     \smallskip
 
     \mentry
-        {Western Country Kindergarten}
-        {Babe}
-        {June 2003}
+        {East China University of Science and Technology (ECUST)}
+        {Bachelor of Engineering in Electrical Engineering}
+        {July 2019}
         {
             \begin{cvitems} % Description(s) bullet points
-                \item {Learned to do midday naps}
-                \item {Was a cute boi and had a lot of fun with other cute bois\&gals}
+                \item {Ranking: 1 / 61;~~~~Overall GPA: 3.84 / 4.00;~~~~Major GPA: 3.95 / 4.00}
+                \item {Coursework: C, Python, Discrete Math, Data Structure \& Algorithms, Software Engineering, Database, Artificial Intelligence, Optimization Methods, Embedded System}
             \end{cvitems}
         }
     
-    
+    \vfill
     \msection{Work Experience}
 
-    \mentry{A Huge Personal Electronics Company}
-    {Software Intern}
+    \mentry{Apple}
+    {Software Engineering Intern}
     {Mar. 2020 - Sept. 2020}
     {
         \begin{cvitems}
-            \item {She wasn't sure whether to be impressed or concerned that he folded underwear in neat little packages.}
-            \item {Nothing seemed out of place except the washing machine in the bar.}
-            \item {She could hear him in the shower singing with a joy she hoped he'd retain after she delivered the news.}
+            \item Worked on an initiative to centralize and optimize the palletization process. 
+            \item Developed an iPad App using \textbf{Swift} that integrated with SAP Cloud and on-premise SAP system.
+            \item Built a game that gamifies the palletization process for learning and training using \textbf{Unity} and \textbf{C\#}.
+            \item Worked with a matrix team distributed across locations (Shanghai, Singapore, US); presented to senior executives.
+        \end{cvitems}
+    }
+
+    \smallskip
+
+    \mentry{eBay}
+    {Software Engineering Intern}
+    {Oct. 2019 - Mar. 2020}
+    {
+        \begin{cvitems}
+            \item Participated in agile development and contributed 20+ new features to the Financial Accounting System that processes all the transactions of eBay.
+            \item Created \textbf{RESTful APIs} with \textbf{Java Spring} and web pages with \textbf{React}; managed projects with \textbf{Maven}.
+            \item Built a set of \textbf{Python} scripts to automate repetitive tasks, such as journal validation and data fixing.
+        \end{cvitems}
+    }
+
+    \smallskip
+
+    \mentry{Renlifang Intelligent Tech}
+    {Software Engineering Intern}
+    {July 2018 - Aug. 2018}{
+        \begin{cvitems}
+            \item Worked on data collection for a stock analysis system that estimates the risk of trading strategies.
+            \item Designed and implemented a pipeline to crawl, clean, format, and store about 43 million stock records using \textbf{Python Scrapy} and \textbf{MySQL}.
         \end{cvitems}
     }
     
+    \vfill
     \msection{Projects}
 
-    \mentry{A Huge Personal Electronics Company}
-    {Software Intern}
-    {}
-    {
+    \mentry{Electroencephalography (EEG) Classification using Deep Learning}
+    {Research Assistant}{}{
         \begin{cvitems}
-            \item {She wasn't sure whether to be impressed or concerned that he folded underwear in neat little packages.}
-            \item {Nothing seemed out of place except the washing machine in the bar.}
-            \item {She could hear him in the shower singing with a joy she hoped he'd retain after she delivered the news.}
+            \item Implemented a Convolutional Neural Network (\textbf{CNN}) to classify EEG signals and predict which character was stared at by disabled subjects.
+            \item Trained this network using \textbf{Python Keras} and achieved 91\% test accuracy on the BCI Competition III dataset, which outperformed tradition LDA methods by 8\%.
         \end{cvitems}
     }
 
+    \smallskip
+
+    \mentry{
+        \href{https://github.com/puyihua/OS-Design-Implem-Projects/}{Operating System Core Functions Implementation}
+    }{UIC CS461 Project}{}{
+        \begin{cvitems}
+            \item Built OS functions in XV6 (a Unix-like x86 OS) using C and X86 Assembly, debugged with GDB.
+            \item Implemented Functions: bootloader, console driver, graphics driver, memory and page management, `/proc` virtual file.
+        \end{cvitems}
+    }
+
+    \vfill
     \msection{Skills}
 
     \skillentry
         {Programming}
         {C, C++, C\#, C\#+, JavaScript, JavaPaper, JavaTissue, Matlab, Python, Snake}
 
-    \skillentry{DevOps}{Maven, Git, Docker, Kubernetes, Jenkins, AWS}
+    \skillentry
+        {Framework / Library}
+        {Spring Boot, JUnit, React, Express, Django, Scrapy, Keras, NumPy, Unity}
+    
+    \skillentry
+        {DevOps}
+        {Maven, Git, Docker, Kubernetes, Jenkins, AWS}
+    
 \end{document}
