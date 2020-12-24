@@ -103,10 +103,11 @@
 \setlength{\parskip}{0em}
 
 \newcommand{\cvHeaderNameIndent}{0mm}
-\newcommand{\cvSectionNameIndent}{1mm}
+\newcommand{\cvSectionNameIndent}{0mm}
+\newcommand{\cvDescriptionIndent}{2mm}
+
 \newcommand{\cvSectionNameBeforeSpace}{2.5mm}
 \newcommand{\cvSectionNameAfterSpace}{1mm}
-\newcommand{\cvDescriptionIndent}{3mm}
 
 
 %-------------------------------------------------------------------------------
@@ -159,10 +160,7 @@
 
 \newcommand{\msection}[1]{%
     \vspace{\cvSectionNameBeforeSpace}
-    \hspace{\cvSectionNameIndent}{
-        {\Large\sectionfont\scshape\color{darkRed} #1}
-        \hrulefill
-    }
+    \hspace{\cvSectionNameIndent}{{\Large\sectionfont\scshape\color{darkRed} #1}\hrulefill}
     \vspace{\cvSectionNameAfterSpace}
 }
 
